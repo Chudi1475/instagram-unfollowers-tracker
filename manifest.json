@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Instagram Unfollowers Tracker",
+  "name": "Chudi's Instagram Unfollow Checker",
   "version": "1.0.0",
-  "description": "Search any Instagram account you can view and instantly see unfollowers, new followers, and one-way follows. Uses your own logged-in session.",
+  "description": "Track who unfollowed you on Instagram. Search any account you can see and check unfollowers, blocked you, and follow-back stats in seconds. Runs on your own logged-in session.",
   "permissions": ["storage"],
   "host_permissions": [
     "https://www.instagram.com/*",
@@ -10,6 +10,6 @@
   ],
   "action": {
     "default_popup": "popup.html",
-    "default_title": "Instagram Unfollowers Tracker"
+    "default_title": "Chudi's Instagram Unfollow Checker"
   }
 }
