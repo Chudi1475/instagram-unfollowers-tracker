@@ -11,27 +11,20 @@
       <div class="progress-text"></div>
     </div>
 
-    <section id="view-home" class="view">
+    <section class="view">
       <header class="brand">
         <div class="logo"></div>
         <h1>Chudi's Unfollow Checker</h1>
       </header>
-      <p class="subtitle">Search and track an account to start monitoring unfollowers.</p>
+      <p class="subtitle">Find who an Instagram account follows that doesn't follow them back.</p>
       <div class="search">
         <input type="text" id="search-input" placeholder="Enter Instagram username..." autocomplete="off" spellcheck="false" autofocus>
-        <button id="search-btn">Search</button>
+        <button id="search-btn">Check</button>
       </div>
       <p class="hint">Make sure you are logged into Instagram.</p>
-      <div id="search-status"></div>
-
-      <section class="tracked-section">
-        <h2>Tracked Accounts</h2>
-        <div id="tracked-list" class="tracked-list"></div>
-      </section>
+      <div id="status"></div>
+      <div id="results"></div>
     </section>
-
-    <section id="view-account" class="view hidden"></section>
-    <section id="view-list" class="view hidden"></section>
 
     <div id="toast" class="toast"></div>
   </div>

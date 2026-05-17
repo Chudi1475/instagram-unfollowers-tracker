@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Chudi's Instagram Unfollow Checker",
   "version": "1.0.0",
-  "description": "Track who unfollowed you on Instagram. Search any account you can see and check unfollowers, blocked you, and follow-back stats in seconds. Runs on your own logged-in session.",
+  "description": "Find who an Instagram account follows that doesn't follow them back. Search any account in seconds using your own logged-in session.",
   "permissions": ["storage"],
   "host_permissions": [
     "https://www.instagram.com/*",
