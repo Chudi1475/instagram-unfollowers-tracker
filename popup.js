@@ -505,16 +505,17 @@ async function renderList({ username, stat }) {
     const olderN = (c.older || []).length;
     const recentLabel = pluralize(recentN, c.recentLabelSingular, c.recentLabelPlural);
     allUsers = [...c.recent, ...(c.older || [])];
+    const negClass = ['unfollowers', 'blocked'].includes(stat) ? ' negative' : '';
 
     body = `
       ${c.hint ? `<p class="list-description">${escapeHtml(c.hint)}</p>` : ''}
       <div class="list-section">
-        <div class="list-section-title"><span class="accent">${recentN}</span> ${escapeHtml(recentLabel)} since last sync</div>
+        <div class="list-section-title${negClass}"><span class="accent">${recentN}</span> ${escapeHtml(recentLabel)} since last sync</div>
         ${renderUserList(c.recent, 'No results.')}
       </div>
       ${c.older ? `
         <div class="list-section">
-          <div class="list-section-title">${escapeHtml(c.olderTitle)} (${olderN})</div>
+          <div class="list-section-title older">${escapeHtml(c.olderTitle)} (${olderN})</div>
           ${renderUserList(c.older, 'No results.')}
         </div>
       ` : ''}
