@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <div id="progress" class="progress hidden">
+      <div class="progress-bar"></div>
+      <div class="progress-text"></div>
+    </div>
+
+    <section id="view-home" class="view">
+      <header class="brand">
+        <div class="logo"></div>
+        <h1>Instagram Unfollowers</h1>
+      </header>
+      <p class="subtitle">Search and track an account to start monitoring unfollowers.</p>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Enter Instagram username..." autocomplete="off" spellcheck="false" autofocus>
+        <button id="search-btn">Search</button>
+      </div>
+      <p class="hint">Make sure you are logged into Instagram.</p>
+      <div id="search-status"></div>
+
+      <section class="tracked-section">
+        <h2>Tracked Accounts</h2>
+        <div id="tracked-list" class="tracked-list"></div>
+      </section>
+    </section>
+
+    <section id="view-account" class="view hidden"></section>
+    <section id="view-list" class="view hidden"></section>
+
+    <div id="toast" class="toast"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

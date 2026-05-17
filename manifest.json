@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Unfollowers Tracker",
+  "version": "1.0.0",
+  "description": "Search any Instagram account you can view and instantly see unfollowers, new followers, and one-way follows. Uses your own logged-in session.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://i.instagram.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Instagram Unfollowers Tracker"
+  }
+}
